@@ -31,7 +31,7 @@ export class HomePage {
     this.state = 'operator';
     this.operator = o;
     this.memory = +this.display;
-    this.display = o;
+    // this.display = o;
   }
 
   calculate() {
