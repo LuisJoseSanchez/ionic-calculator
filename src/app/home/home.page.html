@@ -27,15 +27,14 @@
     <ion-col size="3">
       <ion-button
         size="large"
-        expand="full"
-        >
+        expand="full">
         %
       </ion-button>
     </ion-col>
     <ion-col size="3">
       <ion-button
+        (click)="clickOperator('/')"
         size="large"
-        
         expand="full">
         /
       </ion-button>
@@ -67,10 +66,10 @@
     </ion-col>
     <ion-col size="3">
       <ion-button
+        (click)="clickOperator('*')"
         size="large"
-        expand="full"
-        >
-        X
+        expand="full">
+        <ion-icon size="large" name="close"></ion-icon>
       </ion-button>
     </ion-col>
   </ion-row>
@@ -102,10 +101,10 @@
     </ion-col>
     <ion-col size="3">
       <ion-button
+        (click)="clickOperator('-')"
         size="large"
-        expand="full"
-        >
-        -
+        expand="full">
+        <ion-icon size="large" name="remove"></ion-icon>
       </ion-button>
     </ion-col>
   </ion-row>
@@ -139,9 +138,8 @@
       <ion-button
         (click)="clickOperator('+')"
         size="large"
-        expand="full"
-        >
-        +
+        expand="full">
+        <ion-icon size="large" name="add"></ion-icon>
       </ion-button>
     </ion-col>
   </ion-row>
@@ -149,7 +147,7 @@
   <ion-row>
     <ion-col size="3">
       <ion-button
-        (click)="clickOperator('+/-')"
+        (click)="changeSign('+/-')"
         size="large"
         expand="full"
         >
