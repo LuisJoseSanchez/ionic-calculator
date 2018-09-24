@@ -37,9 +37,19 @@ export class HomePage {
 
   calculate() {
     // tslint:disable-next-line:no-eval
-    console.log('display 1:' + this.display);
     this.display = eval('' + this.memory + this.operator + this.display);
-    console.log('display 2:' + this.display);
+    this.memory = 0;
     this.state = 'result';
+  }
+
+  resetLastNumber() {
+    this.display = 0;
+    this.state = 'number';
+  }
+
+  reset() {
+    this.display = 0;
+    this.memory = 0;
+    this.state = 'number';
   }
 }

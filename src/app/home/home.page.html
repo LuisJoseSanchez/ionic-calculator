@@ -9,16 +9,36 @@
 
   <ion-row>
     <ion-col size="3">
-      <ion-button size="large" expand="full">C</ion-button>
+      <ion-button
+        (click)="reset()"
+        size="large"
+        expand="full">
+        AC
+      </ion-button>
     </ion-col>
     <ion-col size="3">
-      <ion-button size="large" expand="full">( )</ion-button>
+      <ion-button
+        (click)="resetLastNumber()"
+        size="large"
+        expand="full">
+        C
+      </ion-button>
     </ion-col>
     <ion-col size="3">
-      <ion-button size="large" expand="full">%</ion-button>
+      <ion-button
+        size="large"
+        expand="full"
+        >
+        %
+      </ion-button>
     </ion-col>
     <ion-col size="3">
-      <ion-button size="large" expand="full">/</ion-button>
+      <ion-button
+        size="large"
+        
+        expand="full">
+        /
+      </ion-button>
     </ion-col>
   </ion-row>
 
@@ -46,7 +66,12 @@
       </ion-button>
     </ion-col>
     <ion-col size="3">
-      <ion-button size="large" expand="full">X</ion-button>
+      <ion-button
+        size="large"
+        expand="full"
+        >
+        X
+      </ion-button>
     </ion-col>
   </ion-row>
 
@@ -76,7 +101,12 @@
       </ion-button>
     </ion-col>
     <ion-col size="3">
-      <ion-button size="large" expand="full">-</ion-button>
+      <ion-button
+        size="large"
+        expand="full"
+        >
+        -
+      </ion-button>
     </ion-col>
   </ion-row>
 
@@ -109,7 +139,8 @@
       <ion-button
         (click)="clickOperator('+')"
         size="large"
-        expand="full">
+        expand="full"
+        >
         +
       </ion-button>
     </ion-col>
@@ -120,7 +151,8 @@
       <ion-button
         (click)="clickOperator('+/-')"
         size="large"
-        expand="full">
+        expand="full"
+        >
         +/-
       </ion-button>
     </ion-col>
@@ -139,7 +171,8 @@
       <ion-button
         (click)="calculate()"
         size="large"
-        expand="full">
+        expand="full"
+        >
         =
       </ion-button>
     </ion-col>
