@@ -2,7 +2,7 @@
   <ion-row>
     <ion-col size="12" color="primary">
       <ion-label class="display">
-        {{ display }}
+        {{ display | number : '.0-8'}}
       </ion-label>
     </ion-col>
   </ion-row>
@@ -163,18 +163,24 @@
       </ion-button>
     </ion-col>
     <ion-col size="3">
-      <ion-button size="large" expand="full">.</ion-button>
+      <ion-button
+        (click)="setDecimal()"
+        size="large"
+        expand="full">
+        .
+      </ion-button>
     </ion-col>
     <ion-col size="3">
       <ion-button
         (click)="calculate()"
         size="large"
-        expand="full"
-        >
+        expand="full">
         =
       </ion-button>
     </ion-col>
   </ion-row>
 </ion-grid>
 
+<!--
 memory: {{ memory }} operator: {{ operator }} display: {{ display }} state: {{ state }}
+-->
