@@ -36,12 +36,12 @@ export class HomePage {
   }
 
   clickOperator(o: string) {
-    //console.log('clickOperator inicio');
+    // console.log('clickOperator inicio');
     this.calculate();
     this.operator = o;
     this.memory = this.display;
     this.state = 'operator';
-    //console.log('clickOperator fin');
+    // console.log('clickOperator fin');
   }
 
   calculate() {
